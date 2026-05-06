@@ -1,3 +1,4 @@
+from dotenv import main
 import pandas as pd
 
 class AnimeDataLoader:
@@ -21,3 +22,4 @@ class AnimeDataLoader:
         df[['combined_info']].to_csv(self.processed_csv , index=False,encoding='utf-8')
 
         return self.processed_csv
+    
